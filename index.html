@@ -7,14 +7,23 @@
     <title>Arrow Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div id="score"></div>
-    <div id="mission"></div>
-    <div id="timer">
-        <div id="timerBar"></div>
-        <p id="timerText">32.1</p>
+<body class="main">
+    <h1>ARROW GAME</h1>
+    <h2>Type the arrow on screen as fast as possible!</h2>
+    <div>
+        <button onclick="gotoLevel(1)">LEVEL 1</button>
+        <button onclick="gotoLevel(2)">LEVEL 2</button>
     </div>
+    <div>
+        <button onclick="gotoLevel(3)">LEVEL 3</button>
+        <button onclick="gotoLevel(4)">LEVEL 4</button>
+    </div>
+        <button onclick="gotoLevel(5)">LEVEL 5</button>
 
-    <script type="text/javascript" src="main.js"></script>
+        <script>
+            function gotoLevel(level){
+                window.location.href = "./level" + level + ".html";
+            }
+        </script>
 </body>
 </html>

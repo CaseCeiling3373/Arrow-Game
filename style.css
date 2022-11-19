@@ -1,5 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+body{
+    font-family: 'Poor Story', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    background-color: rgb(181, 199, 222);
+}
 #mission{
     width: 80vw;
     height: 10vw;
     background-color: steelblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3vw;
+}
+#timer{
+    width: 60vw;
+    height: 3vw;
+    background-color: lightsteelblue;
+    border-radius: 2vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#timerBar{
+    width: 70%;
+    height: 100%;
+    background-color: steelblue;
+    position: absolute;
+    border-radius: 2vw;
+}
+#timerText{
+    z-index: 2;
+    color: white;
+}
+.arrow{
+    width: 8vw;
+    height: 8vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.up{
+    background-image: url(arrowup.svg);
+}
+.down{
+    background-image: url(arrowdown.svg);
+}
+.left{
+    background-image: url(arrowleft.svg);
+}
+.right{
+    background-image: url(arrowright.svg);
+}
+#score{
+    font-size: 20px;
+}
+
+.correct{
+    filter: invert(100%) drop-shadow(0 0 1vw rgb(0, 187, 0));
+}
+.wrong{
+    filter: invert(50%) drop-shadow(0 0 1vw red);
+}
+
+#startBtn{
+    width: 20vw;
+    height: 8vw;
+    font-size: 3vw;
+    font-family: 'Poor Story', cursive;
+    border: 0.5px solid rgb(42, 101, 150);
+    background-color: steelblue;
+    border-radius: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#startBtn:hover{
+    background-color: rgb(84, 162, 227);
+}
+#startBtn:active{
+     background-color: rgb(39, 78, 109);
+}
+.start{
+    position: absolute;
+    z-index: 3;
+}
+
+.title{
+    position: absolute;
+    transform: translateY(-20vw);
+}
+
+.main button{
+    font-size: 3vw;
+    padding: 1vw;
+    border: 2px solid rgb(163, 182, 207);
+    border-radius: 20px;
+    margin: 0.5vw;
 }
