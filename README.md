@@ -1,2 +1,2 @@
 # Arrow-Game
-https://github.com/CaseCeiling3373/Arrow-Game.git
+https://caseceiling3373.github.io/Arrow-Game/ idk play if u like friday night funkin
